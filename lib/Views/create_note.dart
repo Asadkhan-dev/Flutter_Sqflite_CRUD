@@ -13,8 +13,9 @@ class CreateNote extends StatefulWidget {
 class _CreateNoteState extends State<CreateNote> {
   final title = TextEditingController();
   final content = TextEditingController();
+  // form key is use for form state management
   final formKey = GlobalKey<FormState>();
-
+  // initialize  database instant
   final db = DatabaseHelper();
   @override
   Widget build(BuildContext context) {
